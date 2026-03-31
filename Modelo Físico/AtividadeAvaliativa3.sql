@@ -1,6 +1,4 @@
-create database sakila;
 use sakila;
-drop database sakila;
 # 2 - A 
 select 
 	*
@@ -37,13 +35,3 @@ from
     inner join film using (language_id);
     
 # 3 - A
-select 
-    count(film_id) as qtde,
-    rental_rate as taxa,
-    count(inventory.film_id) * rental_rate as totalPrevisto
-from
-	film
-		inner join inventory on (film.film_id = inventory.film_id)
-group by
-	titulo, rental_rate;
-    

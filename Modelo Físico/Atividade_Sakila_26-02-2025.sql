@@ -1,6 +1,5 @@
--- create database sakila;
--- drop database sakila;
 use sakila;
+
 # comentario de linha 
 -- comentario de linha
 
